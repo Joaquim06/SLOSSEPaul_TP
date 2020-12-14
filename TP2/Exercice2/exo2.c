@@ -3,7 +3,6 @@
 
 void main() {
 	float longueur, largeur, profondeur;
-	while (0 == 0) {
 		printf_s("entrer une valeur pour la longueur de la longueur : ");
 		scanf_s("%f", &longueur);
 
@@ -52,8 +51,6 @@ void main() {
 		else {
 			printf_s("\nNON VALIDE\n");
 		}
-	}
-
 
 
 	return(EXIT_SUCCESS);
