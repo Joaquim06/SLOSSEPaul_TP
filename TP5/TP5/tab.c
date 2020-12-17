@@ -37,3 +37,8 @@ int initTab2(int* tab, int nbr) {
 		tab[i] = i;								// fonction qui remplit un tableau d’entiers de 1 à un nbr
 	}
 }
+
+
+int* ajoutElementDansTableau(int* tab, int* size, int* nbElts, int element) {
+
+}
