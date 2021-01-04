@@ -27,7 +27,7 @@ int main() {
 
 	do { // boucle de saisit des notes
 		i++;
-		printf_s("\nEntrer la note n%d : \a", i);
+		printf_s("\nEntrer la note n%d : ", i);
 		scanf_s("%f", &note);
 		do {
 			if ((note < 0) || (note > 20)) {

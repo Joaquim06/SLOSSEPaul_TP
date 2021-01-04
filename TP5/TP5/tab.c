@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "tab.h"
 #pragma once
+#define TAILLEAJOUT 10
 
 
 
@@ -40,5 +41,58 @@ int initTab2(int* tab, int nbr) {
 
 
 int* ajoutElementDansTableau(int* tab, int* size, int* nbElts, int element) {
-
+    if (nbElts >= size) {
+        realloc(void *size, size_t TAILLEAJOUT);
+    }
 }
+
+/*#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n;
+    int i;
+    int a;
+    int eto=1;
+    int ote;
+    int space = 0;
+    
+    printf("Entrez un valeur n impaire : ");
+    scanf_s("%d", &n);
+    space = n;
+    ote = n;
+
+    for (a = 0; a < n; a++) {
+        for (i = (space - 1) / 2; i > 0; i--) {
+            printf(" ");
+        }
+
+        for (a = 0; a < eto; a++) {
+            printf("*");
+        }
+        eto += 2;
+        space -= 2;
+        printf("\n");
+    }
+
+    space = 0;
+    ote-=2;
+
+    for (a = 0; a < n-1; a++) {
+
+        for (i = (space + 1) / 2; i >= 0; i--) {
+            printf(" ");
+        }
+
+        for (int p = ote; p > 0; p--) {
+            printf("*");
+        }
+        ote -= 2;
+        space += 2;
+
+        printf("\n");
+    }
+    return 0;
+
+}  */

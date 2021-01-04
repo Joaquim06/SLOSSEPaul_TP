@@ -26,7 +26,7 @@ int main() {
 
 
 	for (int i = 1; i <= 20; i++) {
-		myTab2[i] = i;
+		myTab2[i] = i;				//Remplissage des 20 premières valeurs du tableau avec les nombres de 1 à 20
 	}
 
 	afficheTab(myTab2, TAB2SIZE, 20);
